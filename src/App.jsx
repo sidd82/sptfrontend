@@ -14,11 +14,7 @@ import Home from "./B2C/Home/Home";
 function App() {
   return (
     <StateProvider initialState={initialState} reducer={searchReducer}>
-      <Router>
-        <Switch>
-          <Route to="/" component={Home} />
-        </Switch>
-      </Router>
+      <Home />
     </StateProvider>
   );
 }
